@@ -1,0 +1,12 @@
+CREATE INDEX idx_titles_show_id ON titles(show_id);
+CREATE INDEX idx_titles_release_year ON titles(release_year);
+CREATE INDEX idx_titles_imdb_score ON titles(imdb_score);
+CREATE INDEX idx_persons_name ON persons(name);
+CREATE INDEX idx_tg_title ON title_genres(title_id);
+CREATE INDEX idx_tg_genre ON title_genres(genre_id);
+CREATE INDEX idx_tc_title ON title_countries(title_id);
+CREATE INDEX idx_tc_country ON title_countries(country_id);
+CREATE INDEX idx_credits_title ON credits(title_id);
+CREATE INDEX idx_credits_person ON credits(person_id);
+CREATE INDEX idx_genres_name ON genres(name);
+CREATE INDEX idx_countries_name ON countries(name);
